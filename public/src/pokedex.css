@@ -1,0 +1,25 @@
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 150px;
+    font-family: sans-serif;
+    list-style: none;
+    text-align: left;
+    list-style: none;
+    justify-content: space-evenly;
+}
+li {
+    border: solid blue;
+    margin-bottom: 15px;
+}
+
+ul img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+#search-sort {
+    margin: 20px;
+}
