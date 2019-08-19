@@ -1,39 +1,53 @@
 body {
-    margin: 0;
+   margin: 0;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    background-color: yellow;
-    margin-top: 0;
-    padding: 20px;
+    position: fixed;
+    background-color: red;
+    border: solid black;
+    height: 100px;
+    width: 100%;
+    top: 0;
 }  
 
+main {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
 footer {
-    background-color: yellow;
-    border: solid blue;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color:white;
+    border: solid;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100px;
 }
 
-#logo {
-    width: 350px;
-    height: 300px;
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#grid-container {
-    display: grid;
-    grid-template-columns: 10% 90%;
-    grid-template-areas: "dropDown" "pokedex";
-    grid-template-rows: auto;
+.paging {
+    position: absolute;
 }
 
-.drop-down {
-    grid-area: dropDown;
-    background-color: yellow;
-
+.paging #previous {
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
 }
 
-.pokemon {
-    grid-area: pokedex;
+.paging #next {
+    width: 50px;
+    height: 50px;
 }
+
 

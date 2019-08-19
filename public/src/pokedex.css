@@ -1,25 +1,50 @@
 ul {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 150px;
+    margin-top: 240px;
+    margin-left: 100px;
     font-family: sans-serif;
     list-style: none;
-    text-align: left;
-    list-style: none;
-    justify-content: space-evenly;
+    text-align: center;
+    padding-right: 100px;
+
 }
 li {
-    border: solid blue;
-    margin-bottom: 15px;
+    border: solid red;
+    max-width: 400px;
+    margin-bottom: 10px;
+    transition: all .2s ease-in-out;
+    background-color: white;
+    box-shadow: 0px 0px 20px 1px gray;
+    font-size: .5em;
 }
 
-ul img {
-    object-fit: cover;
+li img {
     width: 100px;
+    object-fit: cover;
+
+}
+
+li:hover {
+    transform: scale(1.5);
+    box-shadow: 0px 0px 20px 1px red;
+    cursor: pointer;
+}
+
+.search {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 100px;
 }
 
-#search-sort {
-    margin: 20px;
+#pokeball {
+    width: 100px;
 }
